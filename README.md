@@ -1,8 +1,8 @@
-# Clinic Booking (MVP)
+# Clinic Booking
 
 Minimal appointment booking app for a small clinic.
 
-## Tech Stack & Trade-offs
+## Tech Stack & Details
 - **Express + Postgres (Neon)**: fast to scaffold; SQL unique constraint on `bookings.slot_id` ensures atomic **no double-booking**. Chose Postgres over SQLite for persistent cloud storage on free tier.
 - **JWT Auth (RBAC)**: simple stateless auth; role checked per-route.
 - **React + Vite**: minimal, fast dev, very small footprint.
